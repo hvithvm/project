@@ -1,0 +1,70 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+    
+}
+
+
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: $font-Medium;
+    line-height: 01.3;
+}
+
+a, a:visited, a:hover {
+    text-decoration: none;
+    
+
+}
+
+// flexbox
+.flex {
+    display: flex;
+
+    &-jc-sb {
+        justify-content: space-between;
+    }
+
+    &-jc-c {
+        justify-content: center;
+    }
+
+    &-jc-r {
+        justify-content: right;
+    }
+}
+
+// Buttons
+button, .button {
+   padding: .625rem 1rem;
+   background-color: $buttonColor;
+   border: 0rem;
+   border-radius: 15px;
+   cursor: pointer;
+   color: $black;
+   font-size: 18px;
+   transition: opacity 300ms ease-in-out;
+   
+   &:hover {
+    opacity: 0.75;
+   }
+}
+
+// Visibility
+.hide-for-mobile {
+    @include breakpoints-down(medium){
+        display: none;
+    }
+}
+
+.hide-for-disktop {
+    @include breakpoints-up(large){
+        display: none;
+    }
+}

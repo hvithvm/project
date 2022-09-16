@@ -1,0 +1,126 @@
+.header {
+    background-color: $backgroundGray;
+    
+
+    nav {
+        padding: 18px;
+    }
+
+
+    &__logo {
+
+        img {
+            width: 5.625rem;
+            height: 6.875rem;
+        }
+    }
+
+
+     &__name {
+        font-family:'Times New Roman', Times, serif;
+        color: $black;
+        margin-top: 2.3rem;
+        margin-left: 3rem;
+     }   
+
+
+    &__button {
+        font-size: 18px;
+        color: $black;
+        transition: opacity 300ms ease-in-out;
+    }    
+
+
+   
+      
+      .wrapper .icon{
+        margin: 20px;
+      }
+      /* nav-menu */
+      .nav-menu{
+        width: 30px;
+        height: 30px;
+        position: relative;
+        transition: .1s;
+        cursor: pointer;
+        display: inline-block;
+      }
+      .nav-menu span{
+        width: 6px;
+        height: 6px;
+        background-color: $yellow;
+        display: block;
+        border-radius: 50%;
+        position: absolute;
+      
+      }
+      .nav-menu:hover span{
+        transform: scale(1.2);
+        transition: 350ms cubic-bezier(.8, .5, .2, 1.4);
+      }
+      .nav-menu span:nth-child(1){
+        left: 0;
+        top: 0;
+      }
+      .nav-menu span:nth-child(2){
+        left: 12px;
+        top: 0;
+      }
+      .nav-menu span:nth-child(3){
+        right: 0;
+        top: 0;
+      }
+      .nav-menu span:nth-child(4){
+        left: 0;
+        top: 12px;
+      }
+      .nav-menu span:nth-child(5){
+        position: absolute;
+        left: 12px;
+        top: 12px;
+      }
+      .nav-menu span:nth-child(6){
+        right: 0px;
+        top: 12px;
+      }
+      .nav-menu span:nth-child(7){
+        left: 0px;
+        bottom: 0px;
+      }
+      .nav-menu span:nth-child(8){
+        position: absolute;
+        left: 12px;
+        bottom: 0px;
+      }
+      .nav-menu span:nth-child(9){
+        right: 0px;
+        bottom: 0px;
+      }
+      .nav-menu.open{
+        transform: rotate(180deg);
+        cursor: pointer;
+        transition: .2s cubic-bezier(.8, .5, .2, 1.4);
+      }
+      .nav-menu.open span{
+        border-radius: 50%;
+        transition-delay: 200ms;
+        transition: .5s cubic-bezier(.8, .5, .2, 1.4);
+      }
+      .nav-menu.open span:nth-child(2) {
+        left: 6px;
+        top: 6px;
+      }
+      .nav-menu.open span:nth-child(4) {
+        left: 6px;
+        top: 18px;
+      }
+      .nav-menu.open span:nth-child(6) {
+        right: 6px;
+        top: 6px;
+      }
+      .nav-menu.open span:nth-child(8) {
+        left: 18px;
+        bottom: 6px;
+      }
+      
+}
